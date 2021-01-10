@@ -36,8 +36,21 @@ btn.addEventListener('mouseout',function(e){
     document.querySelector('.button_border').style.display ='block';
     btn.style.backgroundColor = '#f8ff13';
 });
-
+console.log(window.screen.width);
 if(window.screen.width == 320){
+    add_div();
+    console.log('hello');
+    // let change_div = document.querySelector('.section .header_content');
+    // console.log(change_div);
+    // let footer = document.querySelector('.footer');
+    // console.log(footer);
+    // footer.prepend(change_div);
+    // change_div.style.display = 'flex';
+    // let animation = document.querySelector('.section .animation_two');
+    // console.log(animation);
+    // animation.style.display = 'block';
+}
+function add_div(){
     let change_div = document.querySelector('.section .header_content');
     console.log(change_div);
     let footer = document.querySelector('.footer');
