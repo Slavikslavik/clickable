@@ -234,6 +234,7 @@ body{
                 flex-direction: row;
                 justify-content: space-between;
                 width: 50%;
+                list-style: none;
             }
             &_info{
                 width: 50%;
@@ -319,6 +320,52 @@ body{
         }  
     }
 }
+@media only screen and  (max-width: 1200px){
+    .section{
+        padding: 20px;
+    }
+}
+@media only screen and  (max-width: 992px){
+   body .section .main .right_content--text{
+        font-size: 34px;
+    }
+}
+@media only screen and  (max-width: 768px){
+    body .section{
+        height: auto;
+        .main{
+            flex-direction: column;
+            .right_content {
+            padding-left: 0px;
+            } 
+        }      
+    }
+}
+@media only screen and  (max-width: 576px){
+    body .section .header{
+        flex-direction: column;
+        margin: 0 auto;
+        height: auto;
+    }
+    body .section .main .bonus_effect{
+        &--likes3{
+            display: none;
+        }
+        &--likes4{
+            display: none;
+                }
+        &--likes2{
+            display: none;
+                }
+    }
+    body .section .main .bonus {
+        width: 100%;
+    }
+    body .section .animation_big{
+        top: 60%;
+    }
+}         
+
 @media only screen and  (max-width: 320px) {
     body{
         background:
@@ -350,7 +397,7 @@ body{
                 .bonus{
                     margin-top: 0px;
                     margin-bottom: 0px;
-                    width: 100%;
+                    width: 310px;
                     height: 160px;
                     background: url(../img/text_likes.png) no-repeat;
                     .bonus_gift{
